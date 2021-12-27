@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import {  HttpStatus, HttpException } from '@nestjs/common';
 
 export interface Movie {
   id: number;
@@ -17,5 +18,17 @@ export class AppService {
 
   getMovies(): Movie[] {
     return this.movies;
+  }
+
+
+  getById(id: number): Movie {
+    const movie = this.movies[id-1];
+    console.log(movie)
+    if (movie)
+      {console.log(movie);
+      return movie;}
+    throw new HttpException(`Le movie d'id ${id} n'existe pas` , HttpStatus.NOT_FOUND)
+    // {
+    //   (`Le movie d'id ${id} n'existe pas`)}
   }
 }
