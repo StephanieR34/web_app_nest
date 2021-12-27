@@ -23,9 +23,8 @@ export class AppService {
 
   getById(id: number): Movie {
     const movie = this.movies[id-1];
-    console.log(movie)
     if (movie)
-      {console.log(movie);
+      {
       return movie;}
     throw new HttpException(`Le movie d'id ${id} n'existe pas` , HttpStatus.NOT_FOUND)
     // {
