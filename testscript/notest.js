@@ -2,13 +2,12 @@ const request = require('request');
 
 
 function arg(){
-  // Make sure we got a filename on the command line.
+  // Make sure we got a url on the command line.
   if (process.argv.length < 3) {
       console.log('veuillez entrez un url valide');
       process.exit(1);
   }
   
-  // Read the file 
   var url = process.argv[2];
   return url;
 }
