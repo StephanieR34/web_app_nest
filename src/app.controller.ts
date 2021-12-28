@@ -9,7 +9,7 @@ export class AppController {
   getMovies(): Movie[] {
     return this.appService.getMovies();
   }
-  @Get(`/:id`)
+  @Get(`/id/:id`)
   getById(
     @Param(`id`, new ParseIntPipe(
     {
