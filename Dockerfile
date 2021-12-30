@@ -1,7 +1,7 @@
 # Using Node:10 Image Since it contains all 
 # the necessary build tools required for dependencies with native build (node-gyp, python, gcc, g++, make)
 
-FROM node:12
+FROM node:14
 WORKDIR /app
 COPY ./package.json ./
 RUN npm install
