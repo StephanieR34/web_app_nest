@@ -22,7 +22,7 @@ request.get(urlok, (err, res) => {
         process.exit(1);
     }
     else {
-        console.log(res.statusCode);
+        console.log(res.statusCode + " ok");
         process.exit(0);
     }
 });

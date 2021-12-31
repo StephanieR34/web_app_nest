@@ -11,7 +11,7 @@ function arg(){
     var url = process.argv[2];
     return url;
   }
-
+console.log("url = " + arg())
 const urlok = arg() 
 request.get(urlok, (err, res) => {
     // if (err) {
@@ -22,7 +22,7 @@ request.get(urlok, (err, res) => {
         process.exit(1);
     }
     else {
-        console.log(res.statusCode);
+        console.log(res.statusCode + " ok");
         process.exit(0);
     }
 });
