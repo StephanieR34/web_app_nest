@@ -10,3 +10,6 @@ export AppServiceName="appserviceNestjs"
 
 echo "var file zip create"
 export PathZipFile="webAppNestjs.zip"
+
+echo "var url repos"
+export Repos="https://github.com/StephanieR34/web_app_nest.git"

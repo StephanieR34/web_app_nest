@@ -1,4 +1,5 @@
 unset ResourceGroup
-unset Webappname
-unset Appservicename
-unset pathzipfile
+unset WebAppName
+unset AppServiceName
+unset PathZipFile
+unset Repos
