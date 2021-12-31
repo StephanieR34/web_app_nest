@@ -11,7 +11,7 @@ function arg(){
     var url = process.argv[2];
     return url;
   }
-console.log("url = " + arg())
+
 const urlok = arg() 
 request.get(urlok, (err, res) => {
     // if (err) {
