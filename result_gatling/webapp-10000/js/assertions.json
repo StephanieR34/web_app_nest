@@ -1,0 +1,10 @@
+{
+  "simulation": "Webapp",
+  "simulationId": "webapp",
+  "start": 1643121202451,
+  "description": "",
+  "scenarios": ["Webapp"],
+  "assertions": [
+
+  ]
+}

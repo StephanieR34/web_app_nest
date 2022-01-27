@@ -2,7 +2,7 @@
 source script/var_for_create.sh
 
 echo "Creating App Service Plan: $AppServiceName"
-az appservice plan create --resource-group $ResourceGroup -n $AppServiceName --sku F1 --is-linux
+az appservice plan create --resource-group $ResourceGroup -n $AppServiceName --sku B1 --is-linux
 
 echo "Creating Azure Web App for Linux: $WebAppName"
 az webapp create -p $AppServiceName -n $WebAppName --resource-group $ResourceGroup --runtime "node|14-lts"

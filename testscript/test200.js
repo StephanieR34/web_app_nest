@@ -13,16 +13,18 @@ function arg(){
   }
 
 const urlok = arg() 
-request.get(urlok, (err, res) => {
+request.get({
+    url : urlok,
+    time : true},(err, res) => {
     // if (err) {
     //     return console.log(err);
     // }
     if (res.statusCode != 200) {
-        console.log(res.statusCode);
+        console.log("test status code 200 : " + res.statusCode);
         process.exit(1);
     }
     else {
-        console.log(res.statusCode);
+        console.log("test status code 200 : " + res.statusCode + ' Request time in ms', res.elapsedTime);
         process.exit(0);
     }
 });

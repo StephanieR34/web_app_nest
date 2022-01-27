@@ -18,11 +18,11 @@ request.get(urlok, (err, res) => {
     //     return console.log(err);
     // }
     if (res.statusCode != 404) {
-        console.log(res.statusCode);
+        console.log("test status code 404 : " + res.statusCode);
         process.exit(1);
     }
     else {
-        console.log(res.statusCode);
+        console.log("test status code 404 : " + res.statusCode + " ok");
         process.exit(0);
     }
 });
